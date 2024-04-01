@@ -1,7 +1,8 @@
 {
   "homepage": "https://davin-win-kyi.github.io/website",
 
-  "name": "website-1",
+
+  "name": "davin-website",
 
   "version": "0.1.0",
 
@@ -23,6 +24,9 @@
 
 
   "react-dom": "^18.2.0",
+
+
+  "react-router-dom": "^6.22.3",
 
 
   "react-scripts": "5.0.1",
@@ -49,7 +53,6 @@
   "predeploy": "npm run build",
 
   "deploy": "gh-pages -d build"
-
   },
 
   "eslintConfig": {
