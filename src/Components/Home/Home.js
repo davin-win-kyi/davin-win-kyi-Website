@@ -87,7 +87,7 @@ export function Home() {
           <ul>
             <DropDownItem img={"img/home.png"} text={"Home"} website={"/website/"} />
             <DropDownItem img={"img/resume.jpeg"} text={"CV"} website={"https://drive.google.com/file/d/173AAasbF66ZX1EUa88uzUN6o-4kdKU4C/view?usp=sharing"}/>
-            <DropDownItem img={"img/contact.jpeg"} text={"Contact"} website={"/website/Contact"}/>
+            <DropDownItem img={"img/contact.jpeg"} text={"Contact"} website={"#/website/Contact"}/>
             <DropDownItem img={"img/projects.png"} text={"Projects"} website={"/website/Projects"}/>
             <DropDownItem img={"img/about me.png"} text={"About me"} website={"/website/About"}/>
             <DropDownItem img={"img/teaching icon.jpeg"} text={"Teaching"} website={"/website/Teaching"}/>
