@@ -51,7 +51,9 @@ export function Teaching() {
         <p className="teaching-title">Courses Taught</p>
         <div className="teaching-classes">
           <div className="teaching-class">
-            <img className="teaching-class-img" src="img/CSE340_spring2024.png"></img>
+            <a href="https://docs.google.com/document/d/e/2PACX-1vTjb0nvBM7lrm9RzEXRuQPHbOmAPvOpCvtmqYVutbf0Y-eDnHDWZJtz11T_XyatuKl_kQOFo_sFCbLe/pub">
+              <img className="teaching-class-img" src="img/CSE340_spring2024.png"></img>
+            </a>
             <p className="teaching-class-text">
               <p>Course Taught: CSE 340 Spring 2024</p>
               <p className="teaching-class-text-duties">Duties: Course material creation and testing, leading sections of 70+ students, hosting office hours for 70+ students</p>
@@ -61,7 +63,9 @@ export function Teaching() {
 
         <div className="teaching-classes">
           <div className="teaching-class">
-            <img className="teaching-class-img" src="img/CSE 340.png"></img>
+            <a href="https://courses.cs.washington.edu/courses/cse340/">
+              <img className="teaching-class-img" src="img/CSE 340.png"></img>
+            </a>
             <p className="teaching-class-text">
               <p>Course Taught: CSE 340 Autumn 2023</p>
               <p className="teaching-class-text-duties">Duties: Administrative duties and overseeing of course organization</p>
@@ -71,7 +75,9 @@ export function Teaching() {
 
         <div className="teaching-classes">
           <div className="teaching-class">
-            <img className="teaching-class-img" src="img/CSE 340.png"></img>
+            <a href="https://courses.cs.washington.edu/courses/cse340/23sp/">
+              <img className="teaching-class-img" src="img/CSE 340.png"></img>
+            </a>
             <p className="teaching-class-text">
               <p>Course Taught: CSE 340 Spring 2023</p>
               <p className="teaching-class-text-duties">Duties: Course material creation and testing, grading assignments, leading sections of 20+ students, hosting office hours for 40+ students</p>
@@ -81,7 +87,9 @@ export function Teaching() {
 
         <div className="teaching-classes">
           <div className="teaching-class">
-            <img className="teaching-class-img" src="img/CSE340_sp2023.jpeg"></img>
+            <a href="https://courses.cs.washington.edu/courses/cse340/23wi/">
+              <img className="teaching-class-img" src="img/CSE340_sp2023.jpeg"></img>
+            </a>
             <p className="teaching-class-text">
               <p>Course Taught: CSE 340 Winter 2023</p>
               <p className="teaching-class-text-duties">Duties: Course material creation and testing, grading assignments, leading sections of 20+ students, hosting office hours for 40+ students</p>
@@ -91,7 +99,9 @@ export function Teaching() {
 
         <div className="teaching-classes">
           <div className="teaching-class">
-            <img className="teaching-class-img-last" src="img/CSE 414 icon.jpeg"></img>
+            <a href="https://sites.google.com/cs.washington.edu/cse414-22au/">
+              <img className="teaching-class-img-last" src="img/CSE 414 icon.jpeg"></img>
+            </a>
             <p className="teaching-class-text">
               <p>Course Taught: CSE 414 Autumn 2022</p>
               <p className="teaching-class-text-duties">Duties: Leading sections of 30+ students, hosting office hours for 300+ students</p>
