@@ -1,155 +1,106 @@
-.menu-trigger img{
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  height: 60px;
-  width: 60px;
-  border-radius: 50%;
-  overflow: hidden;
-  cursor: pointer;
-  background-color: #fff;
-}
-
-img:hover {
-  background-color: #DDD;
-}
-
-.dropdown-menu{
-  position: absolute;
-  top: 80px;
-  right: 20px;
-  background-color: #fff;
-  border-radius: var(--border-radius);
-  padding: 10px 20px;
-  width: 200px;
-  z-index: 2;
-}
-
-.dropdown-menu::before{
-  content: '';
-  position: absolute;
-  top: -5px;
-  right: 20px;
-  height: 20px;
-  width: 20px;
-  background: var(--secondary-bg);
-  transform: rotate(45deg);
-}
-
-.dropdown-menu.active{
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-  transition: background-color 0.3s, color 0.3s var(--speed) ease;
-}
-
-.dropdown-menu.inactive{
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-20px);
-  transition: var(--speed) ease;
-}
-
-
-h3{
-  width: 100%;
-  text-align: center;
-  font-size: 18px;
-  padding: 20px 0;
-  font-weight: 500;
-  font-size: 18px;
-  color: var(--primary-text-color);
-  line-height: 1.2rem;
-}
-
-h3 span{
-  font-size: 14px;
-  color: var(--secondary-text-color);
-  font-weight: 400;
-}
-
-.dropdown-menu ul li{
-  padding: 10px  0;
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
-}
-
-.dropdown-menu ul li:hover a{
-  color: rgb(212, 33, 9);
-  cursor: pointer;
-}
-
-.dropdown-menu ul li:hover img{
-  opacity: 1;
-  cursor: pointer;
-}
-
-.dropdownItem{
-  display: flex;
-  margin: 10px auto;
-}
-
-.dropdownItem img{
-  max-width: 20px;
-  margin-right: 10px;
-  opacity: 0.5;
-  transition: var(--speed);
-}
-
-.dropdownItem a{
-  max-width: 100px;
-  margin-left: 10px;
-  transition: var(--speed);
-}
-
-.background-aboutme {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 90%; /* Set height to 50% of the viewport height */
-  background-color: #FCFCFC; /* Background color for the bottom half */
-  z-index: 1;
-}
-
-
 /*
 Non-drop down menu content
 */
-
 .aboutme-content {
-  display: flex;
+  margin-top: 30vh;
+  position: relative;
+  display:flex;
   flex-direction: column;
-  position: absolute;
-  align-items: center;
-  justify-content: space-evenly;
   align-items: start;
-  gap: 20px;
   z-index: 2;
 }
 
 .aboutme-title {
-  margin-top: 20vh;
-  margin-left: 10vh;
-  font-size: 30px;
+  white-space: nowrap;
+  margin-top: -10vh;
+  margin-left: 5vh;
+  font-size: 35px;
   font-weight: bold;
 }
 
-.aboutme-image {
-  height: 45vh;
-  width: 32.5vw;
-  margin-left: 10%;
-  margin-top: 0vh;
+.aboutme-main-content {
+  display: flex;
+  flex-direction: horizontal;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
-.aboutme-name {
-  margin-left: 35%;
+.aboutme-image {
+  height: 50vh;
+  width: 50vh;
+  margin-left: 5vw;
+  margin-top: 2vh;
 }
 
 .aboutme-bio {
+  margin-left: 2.5vh;
+  font-size: 20px;
+}
+
+.aboutme-cirriculumVitae {
+  margin-left: 5vw;
+  margin-top: 3.5vh;
+  height: 5vh;
+  width: 20vw;
+  background-color: gainsboro;
+  color:black;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+.aboutme-cirriculumVitae:hover {
+  background-color: darkgray;
+}
+
+.aboutme-EducationAndExperience {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  width: 100%;
+}
+
+.aboutme-Education {
+  margin-top: 2.5vh;
   margin-left: 5vw;
 }
 
-.aboutme-main-content {
-  display:flex;
+.aboutme-Experience {
+  margin-top: 2.5vh;
+  margin-left: 35vw;
+}
 
+.aboutme-Education-title {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.aboutme-Experience-title {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.aboutme-element {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2vh;
+}
+
+.aboutme-element-image {
+  height: 10vh;
+}
+
+.aboutme-element-text {
+  margin-left: 1vh;
+  font-size: 15px;
+  margin-top: -1.5vh;
+}
+
+body {
+  /* Define the linear gradient */
+  background: linear-gradient(to bottom,
+              transparent 10%,
+              #FDFDFD 10%);
+
+  /* Ensure the background covers the entire page */
+  min-height: 100vh;
+  margin: 0;
 }

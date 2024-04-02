@@ -106,68 +106,61 @@ h3 span{
 Styles for non dropdown related elements
 */
 
-.profile-photo {
+.teaching-main {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-top: 10vh;
+  margin-left: 3vw;
   position: relative;
-  margin-top: 300px;
-  margin-left: -50vw;
-  height: 250px;
-  width: 250px;
   z-index: 2;
-  border-radius: 15%;
 }
 
-.home-name {
+.teaching-title {
+  font-size: 25px;
   font-weight: bold;
-  font-size: 50px;
-  position: relative;
-  margin-left: 20vw;
-  margin-top: -25vh;
-  z-index: 2;
-  border-radius: 15%;
 }
 
-.home-description {
-  position: relative;
-  margin-left: 22.5vw;
-  margin-top: -2.5vh;
-  z-index: 2;
-  border-radius: 15%;
+.teaching-classes {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5vh;
+  margin-left: 5vw;
 }
 
-.home-social-first {
-  position: relative;
-  margin-left: 22.5vw;
-  z-index: 2;
-  height: 30px;
+.teaching-class {
+  display: flex;
+  flex-direction: row;
 }
 
-.home-social-other {
-  position: relative;
+.teaching-class-img {
+  height:100px;
+  width: 100px;
+}
+
+.teaching-class-text {
   margin-left: 2vw;
-  z-index: 2;
-  height: 30px;
+  margin-top: -2vh;
+  align-items: start;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
-.home-social-first:hover {
-  height: 32px;
-  background-color: #DFDFDF;
+.teaching-class-img-last {
+  height:100px;
+  width: 100px;
 }
 
-.home-social-other:hover {
-  height: 32px;
-  background-color: #DFDFDF;
+.teaching-class-text {
+  margin-left: 2vw;
+  margin-top: -2vh;
+  align-items: start;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
-.Home {
-  position: relative;
-}
-
-.background {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 90%; /* Set height to 50% of the viewport height */
-  background-color: #FCFCFC; /* Background color for the bottom half */
-  z-index: 1;
+.teaching-class-text-duties {
+  margin-top: -1.0vh;
 }

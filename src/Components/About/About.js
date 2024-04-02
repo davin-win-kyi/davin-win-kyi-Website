@@ -45,7 +45,7 @@ export function About() {
 
 
   return (
-    <div className="App">
+    <div>
 
       <div className="aboutme-content">
         <p className="aboutme-title">About Me</p>
@@ -59,31 +59,77 @@ export function About() {
             <br></br>
             Hi Everyone! My name is Davin Win Kyi. I'm currently a 1st year master's student at the Univeristy of Washington! <br></br>
             My current research interest revolve around Computer Vision, AR/VR/XR, Robotics, HCI and accessibility <br></br>
-            The research I'm currently involved in makes use of AR/VR/XR to aid blind and low vision (BLV) in their navigation <br></br>
-            around the University of Washington's campus and soon everywhere else! <br></br>
             <br></br>
-            During my free time, I like to watch interesting youtube videos from Kurzgesagt and cutscens of popular games. <br></br>
-            I also like competitive swimming, but unfortunately am not as fit as I was in my golden days. <br></br>
+            During my free time, I like watching youtube channels like Kurzgesagt and cutscenes of games. <br></br>
+            I also love competitive swimming, but unfortunately am not in my golden days. <br></br>
             <br></br>
-            I love to discuss research and love chatting with those interested in my research and research in general. <br></br>
-            If you would like to reach out to me, feel free to fill out my contact form or email me at davin123@cs.washington.edu.
+            I love discussing research, so if you would like to reach out to me, feel free to fill out my <br></br>
+            contact form or email me at davin123@cs.washington.edu.
           </p>
         </div>
 
-        <div>
-          <div>
-            <p>
-              Education
-            </p>
+        <div className="aboutme-EducationAndExperience">
+          <div className="aboutme-Education">
+            <p className="aboutme-Education-title">Education</p>
+            <div className="aboutme-element">
+              <a href="https://www.cs.washington.edu/">
+                <img className="aboutme-element-image" src="img/UW icon.png"></img>
+              </a>
+              <div className="aboutme-element-text">
+                  <p>University of Washington</p>
+                  <p> Bachelor of Computer Science 2019-2024</p>
+                </div>
+            </div>
+
+            <div className="aboutme-element">
+              <a href="https://www.cs.washington.edu/">
+                <img className="aboutme-element-image" src="img/UW icon.png"></img>
+              </a>
+              <div className="aboutme-element-text">
+                  <p>University of Washington</p>
+                  <p> Masters of Computer Science 2024-Present</p>
+                </div>
+            </div>
+
 
           </div>
-            <p>
-              Experience
-            </p>
-          <div>
 
+          <div className="aboutme-Experience">
+            <p className="aboutme-Experience-title">Experience</p>
+
+            <div className="aboutme-element">
+              <a href="https://makeabilitylab.cs.washington.edu/">
+                <img className="aboutme-element-image" src="img/makeability icon.png"></img>
+              </a>
+              <div className="aboutme-element-text">
+                <p>Makeability Lab</p>
+                <p> Research Assistant Nov 2022 - Present</p>
+              </div>
+
+            </div>
+
+            <div className="aboutme-element">
+              <a href="https://makeabilitylab.cs.washington.edu/">
+                <img className="aboutme-element-image" src="img/makeability icon.png"></img>
+              </a>
+              <div className="aboutme-element-text">
+                <p>Makeability Lab</p>
+                <p> Research Intern (REU) Sep 2023 - Dec 2023</p>
+              </div>
+            </div>
+
+            <div className="aboutme-element">
+              <a href="https://ubicomplab.cs.washington.edu/">
+                <img className="aboutme-element-image" src="img/ubicomp.png"></img>
+              </a>
+              <div className="aboutme-element-text">
+                <p>Ubicomp Lab</p>
+                <p> Undergraduate Research Assistant Feb 2023 - Sep 2023</p>
+              </div>
+            </div>
           </div>
         </div>
+
 
       </div>
 
@@ -104,9 +150,19 @@ export function About() {
             <DropDownItem img={"img/teaching icon.jpeg"} text={"Teaching"} website={"/website/Teaching"}/>
           </ul>
         </div>
+
+        <div className="aboutme-educationExperience">
+          <div>
+          </div>
+
+          <div>
+          </div>
+        </div>
+
+
       </div>
 
-      <div className="background-aboutme"></div>
+      <div className="background"></div>
 
     </div>
   );
@@ -120,3 +176,71 @@ function DropDownItem(props) {
     </li>
   );
 }
+
+/*
+        <a href="https://drive.google.com/file/d/173AAasbF66ZX1EUa88uzUN6o-4kdKU4C/view?usp=sharing">
+          <button className="aboutme-cirriculumVitae">
+            Cirriculumn Vitae
+          </button>
+        </a>
+        */
+
+
+/*
+<div className="aboutme-experienceAndEducation">
+          <div className="aboutme-education">
+            <p>
+              Education
+            </p>
+
+            <div className="aboutme-education-element">
+              <img className="aboutme-education-img" src="img/UW icon.png"></img>
+              <div className="aboutme-education-text">
+                <p>University of Washington</p>
+                <p> Bachelor of Computer Science 2020-2024</p>
+              </div>
+            </div>
+
+
+            <div className="aboutme-education-element">
+              <img className="aboutme-education-img" src="img/UW icon.png"></img>
+              <div className="aboutme-education-text">
+                <p>University of Washington</p>
+                <p> Masters of Computer Science 2024-present</p>
+              </div>
+            </div>
+
+
+          </div>
+
+          <div className="aboutme-experience">
+            <p>
+              Experience
+            </p>
+
+            <div className="aboutme-experience-element">
+              <img className="aboutme-experience-img" src="img/makeability icon.png"></img>
+              <div className="aboutme-experience-text">
+                <p>University of Washington</p>
+                <p> Masters of Computer Science 2024-present</p>
+              </div>
+            </div>
+
+            <div className="aboutme-experience-element">
+              <img className="aboutme-experience-img" src="img/makeability icon.png"></img>
+              <div className="aboutme-experience-text">
+                <p>University of Washington</p>
+                <p> Masters of Computer Science 2024-present</p>
+              </div>
+            </div>
+
+            <div className="aboutme-experience-element">
+              <img className="aboutme-experience-img" src="img/ubicomp.png"></img>
+              <div className="aboutme-experience-text">
+                <p>Ubiqioutus Computing Lab</p>
+                <p> Feb 2023-Sep 2023</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        */
