@@ -120,12 +120,12 @@ export function Teaching() {
         <div className={`dropdown-menu ${open? 'active' : 'inactive'}`} >
           <h3>Davin Win Kyi<br/><span>Undergraduate Research Assistant</span></h3>
           <ul>
-            <DropDownItem img={process.env.PUBLIC_URL + "/img/home.png"} text={"Home"} website={"/#website/"} />
+            <DropDownItem img={process.env.PUBLIC_URL + "/img/home.png"} text={"Home"} website={"/website/"} />
             <DropDownItem img={process.env.PUBLIC_URL + "/img/resume.jpeg"} text={"CV"} website={"https://drive.google.com/file/d/173AAasbF66ZX1EUa88uzUN6o-4kdKU4C/view?usp=sharing"}/>
-            <DropDownItem img={process.env.PUBLIC_URL + "/img/contact.jpeg"} text={"Contact"} website={"/#website/Contact"}/>
-            <DropDownItem img={process.env.PUBLIC_URL + "/img/projects.png"} text={"Projects"} website={"/#website/Projects"}/>
-            <DropDownItem img={process.env.PUBLIC_URL + "/img/about me.png"} text={"About me"} website={"/#website/About"}/>
-            <DropDownItem img={process.env.PUBLIC_URL + "/img/teaching icon.jpeg"} text={"Teaching"} website={"/#website/Teaching"}/>
+            <DropDownItem img={process.env.PUBLIC_URL + "/img/contact.jpeg"} text={"Contact"} website={"/website/Contact"}/>
+            <DropDownItem img={process.env.PUBLIC_URL + "/img/projects.png"} text={"Projects"} website={"/website/Projects"}/>
+            <DropDownItem img={process.env.PUBLIC_URL + "/img/about me.png"} text={"About me"} website={"/website/About"}/>
+            <DropDownItem img={process.env.PUBLIC_URL + "/img/teaching icon.jpeg"} text={"Teaching"} website={"/website/Teaching"}/>
           </ul>
         </div>
       </div>
