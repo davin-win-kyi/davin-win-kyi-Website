@@ -110,7 +110,7 @@ export function About() {
 
             <div className="aboutme-element">
               <a href="https://makeabilitylab.cs.washington.edu/">
-                <img className="aboutme-element-image" src={process.env.PUBLIC_URL + "img/makeability icon.png"}></img>
+                <img className="aboutme-element-image" src={process.env.PUBLIC_URL + "/img/makeability icon.png"}></img>
               </a>
               <div className="aboutme-element-text">
                 <p>Makeability Lab</p>
