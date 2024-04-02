@@ -6,7 +6,7 @@ export function Contact() {
 
   const [open, setOpen] = useState(false);
 
-  const [dropdown, setDropdown] = useState('drop_down_icon.png')
+  const [dropdown, setDropdown] = useState(process.env.PUBLIC_URL + '/drop_down_icon.png')
 
   let menuRef = useRef();
 
@@ -14,7 +14,7 @@ export function Contact() {
     let handler = (e)=>{
       if(!menuRef.current.contains(e.target)){
         setOpen(false);
-        setDropdown('drop_down_icon.png');
+        setDropdown(process.env.PUBLIC_URL + '/drop_down_icon.png');
         console.log(menuRef.current);
       }
     };
@@ -34,7 +34,7 @@ export function Contact() {
   */
   const toggleDropDown = () => {
     setDropdown(prevState => {
-      return prevState === 'drop_down_icon.png' ? 'img/close icon.webp' : 'drop_down_icon.png';
+      return prevState === process.env.PUBLIC_URL + '/drop_down_icon.png' ? process.env.PUBLIC_URL + '/img/close icon.webp' : process.env.PUBLIC_URL + '/drop_down_icon.png';
     })
   }
 
@@ -73,12 +73,12 @@ export function Contact() {
         <div className={`dropdown-menu ${open? 'active' : 'inactive'}`} >
           <h3>Davin Win Kyi<br/><span>Undergraduate Research Assistant</span></h3>
           <ul>
-            <DropDownItem img={"img/home.png"} text={"Home"} website={"/website/"} />
-            <DropDownItem img={"img/resume.jpeg"} text={"CV"} website={"https://drive.google.com/file/d/173AAasbF66ZX1EUa88uzUN6o-4kdKU4C/view?usp=sharing"}/>
-            <DropDownItem img={"img/contact.jpeg"} text={"Contact"} website={"/website/Contact"}/>
-            <DropDownItem img={"img/projects.png"} text={"Projects"} website={"/website/Projects"}/>
-            <DropDownItem img={"img/about me.png"} text={"About me"} website={"/website/About"}/>
-            <DropDownItem img={"img/teaching icon.jpeg"} text={"Teaching"} website={"/website/Teaching"}/>
+            <DropDownItem img={process.env.PUBLIC_URL + "/img/home.png"} text={"Home"} website={"/#website/"} />
+            <DropDownItem img={process.env.PUBLIC_URL + "/img/resume.jpeg"} text={"CV"} website={"https://drive.google.com/file/d/173AAasbF66ZX1EUa88uzUN6o-4kdKU4C/view?usp=sharing"}/>
+            <DropDownItem img={process.env.PUBLIC_URL + "/img/contact.jpeg"} text={"Contact"} website={"/#website/Contact"}/>
+            <DropDownItem img={process.env.PUBLIC_URL + "/img/projects.png"} text={"Projects"} website={"/#website/Projects"}/>
+            <DropDownItem img={process.env.PUBLIC_URL + "/img/about me.png"} text={"About me"} website={"/#website/About"}/>
+            <DropDownItem img={process.env.PUBLIC_URL + "/img/teaching icon.jpeg"} text={"Teaching"} website={"/#website/Teaching"}/>
           </ul>
         </div>
       </div>

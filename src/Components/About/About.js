@@ -6,7 +6,7 @@ export function About() {
 
   const [open, setOpen] = useState(false);
 
-  const [dropdown, setDropdown] = useState('drop_down_icon.png')
+  const [dropdown, setDropdown] = useState(process.env.PUBLIC_URL + '/drop_down_icon.png')
 
   let menuRef = useRef();
 
@@ -14,7 +14,7 @@ export function About() {
     let handler = (e)=>{
       if(!menuRef.current.contains(e.target)){
         setOpen(false);
-        setDropdown('drop_down_icon.png');
+        setDropdown(process.env.PUBLIC_URL + '/drop_down_icon.png');
         console.log(menuRef.current);
       }
     };
@@ -34,7 +34,7 @@ export function About() {
   */
   const toggleDropDown = () => {
     setDropdown(prevState => {
-      return prevState === 'drop_down_icon.png' ? 'img/close icon.webp' : 'drop_down_icon.png';
+      return prevState === process.env.PUBLIC_URL + '/drop_down_icon.png' ? process.env.PUBLIC_URL + '/img/close icon.webp' : process.env.PUBLIC_URL + '/drop_down_icon.png';
     })
   }
 
@@ -51,7 +51,7 @@ export function About() {
         <p className="aboutme-title">About Me</p>
 
         <div className="aboutme-main-content">
-          <img className = "aboutme-image" src="newest_profile_photo.png"></img>
+          <img className = "aboutme-image" src={process.env.PUBLIC_URL + "/newest_profile_photo.png"}></img>
           <br></br>
           <p className="aboutme-bio">
             Davin Win Kyi (ကျော်စံမြင့် kyaw san myint)
@@ -73,7 +73,7 @@ export function About() {
             <p className="aboutme-Education-title">Education</p>
             <div className="aboutme-element">
               <a href="https://www.cs.washington.edu/">
-                <img className="aboutme-element-image" src="img/UW icon.png"></img>
+                <img className="aboutme-element-image" src={process.env.PUBLIC_URL + "/img/UW icon.png"}></img>
               </a>
               <div className="aboutme-element-text">
                   <p>University of Washington</p>
@@ -83,7 +83,7 @@ export function About() {
 
             <div className="aboutme-element">
               <a href="https://www.cs.washington.edu/">
-                <img className="aboutme-element-image" src="img/UW icon.png"></img>
+                <img className="aboutme-element-image" src={process.env.PUBLIC_URL + "/img/UW icon.png"}></img>
               </a>
               <div className="aboutme-element-text">
                   <p>University of Washington</p>
@@ -99,7 +99,7 @@ export function About() {
 
             <div className="aboutme-element">
               <a href="https://makeabilitylab.cs.washington.edu/">
-                <img className="aboutme-element-image" src="img/makeability icon.png"></img>
+                <img className="aboutme-element-image" src={process.env.PUBLIC_URL + "/img/makeability icon.png"}></img>
               </a>
               <div className="aboutme-element-text">
                 <p>Makeability Lab</p>
@@ -110,7 +110,7 @@ export function About() {
 
             <div className="aboutme-element">
               <a href="https://makeabilitylab.cs.washington.edu/">
-                <img className="aboutme-element-image" src="img/makeability icon.png"></img>
+                <img className="aboutme-element-image" src={process.env.PUBLIC_URL + "img/makeability icon.png"}></img>
               </a>
               <div className="aboutme-element-text">
                 <p>Makeability Lab</p>
@@ -120,7 +120,7 @@ export function About() {
 
             <div className="aboutme-element">
               <a href="https://ubicomplab.cs.washington.edu/">
-                <img className="aboutme-element-image" src="img/ubicomp.png"></img>
+                <img className="aboutme-element-image" src={process.env.PUBLIC_URL + "/img/ubicomp.png"}></img>
               </a>
               <div className="aboutme-element-text">
                 <p>Ubicomp Lab</p>
@@ -142,12 +142,12 @@ export function About() {
         <div className={`dropdown-menu ${open? 'active' : 'inactive'}`} >
           <h3>Davin Win Kyi<br/><span>Undergraduate Research Assistant</span></h3>
           <ul>
-            <DropDownItem img={"img/home.png"} text={"Home"} website={"/website/"} />
-            <DropDownItem img={"img/resume.jpeg"} text={"CV"} website={"https://drive.google.com/file/d/173AAasbF66ZX1EUa88uzUN6o-4kdKU4C/view?usp=sharing"}/>
-            <DropDownItem img={"img/contact.jpeg"} text={"Contact"} website={"/website/Contact"}/>
-            <DropDownItem img={"img/projects.png"} text={"Projects"} website={"/website/Projects"}/>
-            <DropDownItem img={"img/about me.png"} text={"About me"} website={"/website/About"}/>
-            <DropDownItem img={"img/teaching icon.jpeg"} text={"Teaching"} website={"/website/Teaching"}/>
+            <DropDownItem img={process.env.PUBLIC_URL + "/img/home.png"} text={"Home"} website={"/#website/"} />
+            <DropDownItem img={process.env.PUBLIC_URL + "/img/resume.jpeg"} text={"CV"} website={"https://drive.google.com/file/d/173AAasbF66ZX1EUa88uzUN6o-4kdKU4C/view?usp=sharing"}/>
+            <DropDownItem img={process.env.PUBLIC_URL + "/img/contact.jpeg"} text={"Contact"} website={"/#website/Contact"}/>
+            <DropDownItem img={process.env.PUBLIC_URL + "/img/projects.png"} text={"Projects"} website={"/#website/Projects"}/>
+            <DropDownItem img={process.env.PUBLIC_URL + "/img/about me.png"} text={"About me"} website={"/#website/About"}/>
+            <DropDownItem img={process.env.PUBLIC_URL + "/img/teaching icon.jpeg"} text={"Teaching"} website={"/#website/Teaching"}/>
           </ul>
         </div>
 
